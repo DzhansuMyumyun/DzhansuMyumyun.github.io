@@ -1,10 +1,533 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Portfolio</title>
 </head>
+
 <body>
 
+    <!-- start navigation -->
+    <!-- <div class="navigation-main-container">
+        <nav class="navigation-sub-container">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">projects</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>  -->
+
+    <!-- end navigation -->
+
+    <!-- start header -->
+    <div class="header-main-container">
+        <div class="header-sub-container">
+            <div class="header-info-container">
+                <h1>Engineering the Future of the Web</h1>
+                <p>Innovative Full Stack Developer crafting seamless digital experiences.</p>
+                <a href="./download/Dzhansu_Myumyun.pdf" download>Download Resume</a>
+            </div>
+            <div class="header-image-container">
+                <img src="./images/main.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start main -->
+        <!-- start about section -->
+        <div class="about-main-container">
+            <div class="about-sub-container">
+                <div class="about-image-container">
+                    <img src="./images/about3.jpg" alt="">
+                </div>
+                <div class="about-info-container">
+                    <div class="about-info-welcome">
+                        <span>hey there!</span>
+                    </div>
+                    <div class="about-info">
+                        <h2>I'm DZHANSU MYUMYUN</h2>
+                        <p style="text-transform: uppercase;">Professional Full Stack Developer.</p>
+                        <p>Driven and innovative Full Stack Developer with over 5 years of expertise in crafting dynamic web
+                            applications. Proficient in both front-end and backend development, with a keen eye for user
+                            experience and robust functionality. Thrives in fast-paced environments, leveraging a strong
+                            foundation in programming languages and frameworks to deliver high-quality solutions. Excels in
+                            collaborating with cross-functional teams to bring creative ideas to life. A proactive learner,
+                            always seeking opportunities to stay ahead of emerging technologies and industry trends. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end about section -->
+
+
+        <!-- start education section -->
+        <div class="educetion-main-container">
+            <div class="education-sub-container">
+                <div class="education-title-container">
+                    <h2>Education</h2>
+                </div>
+                <div class="education-info-main-div">
+                    <div class="education-info-div">
+                        <span>2013 - 2018</span>
+                        <p>Math – Science</p>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <span>K.A Emanuel Hiel </span>
+                        <p>Brussels, Belgium</p>
+                    </div>
+                    <div class="education-info-div">
+                        <span>2018 - 2019</span>
+                        <p>Applied Computer Science</p>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <span>Odisee</span>
+                        <p>Brussels, Belgium</p>
+                    </div>
+                    <div class="education-info-div">
+                        <span>2019 - 2021</span>
+                        <p>Computer Programming</p>
+                        <div class="timeline-horizontal-border">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <span class="single-timeline-horizontal"></span>
+                        </div>
+                        <span>Odisee</span>
+                        <p>Brussels, Belgium</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end education section -->
+
+
+
+        <!-- start languages section -->
+        <div class="languages-main-container">
+            <div class="languages-sub-container">
+                <div class="languages-info-title">
+                    <h2>Languages</h2>
+                    <span></span>
+                </div>
+                <div class="languages-images-container">
+                    <div class="languages-images-container-sub">
+                        <img src="./images/en.png" alt="">
+                        <span> <b>English</b> <br> Advanced</span>
+                    </div>
+                    <div class="languages-images-container-sub">
+                        <img src="./images/nl.png" alt="">
+                        <span> <b>Dutch</b> <br> Advanced</span>
+                    </div>
+                    <div class="languages-images-container-sub">
+                        <img src="./images/fr.png" alt="">
+                        <span> <b>French</b> <br> Intermediate </span>
+                    </div>
+                    <div class="languages-images-container-sub">
+                        <img src="./images/de.png" alt="">
+                        <span> <b>German</b> <br> Basic </span>
+                    </div>
+                    <div class="languages-images-container-sub">
+                        <img src="./images/bg.png" alt="">
+                        <span> <b>Bulgarian</b> <br> Intermediate </span>
+                    </div>
+                    <div class="languages-images-container-sub">
+                        <img src="./images/tr.png" alt="">
+                        <span> <b>Turkish</b> <br> Native </span>
+                    </div>
+                </div>
+                <div class="languages-info-end">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- end languages section -->
+
+
+
+
+        <!-- start services section -->
+        <div class="services-main-container">
+            <div class="services-sub-container">
+                <div class="services-title">
+                    <div class="all-buttons">
+                        <button onclick="showText('services',this)" class="active">Services</button>
+                        <button onclick="showText('skills',this)">Skills</button>
+                        <button onclick="showText('projects',this)">Projects</button>
+                    </div>
+                    <p>Clean code. Smart design. Real results.</p>
+                </div>
+                <div id="services" class="text-content">
+                    <div class="services-info-container">
+                        <div class="services-info">
+                            <i class="fa-solid fa-laptop"></i>
+                            <h3>Full Stack Web Development</h3>
+                            <p>Build complete web apps using modern front-end and back-end technologies.</p>
+                        </div>
+                        <div class="services-info">
+                            <i class="fa-solid fa-palette"></i>
+                            <h3>Front-End & UX Design</h3>
+                            <p>Create responsive interfaces with smooth navigation and user-friendly layouts.</p>
+                        </div>
+                        <div class="services-info">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>API & Database</h3>
+                            <p>Develop secure RESTful APIs and optimize databases for seamless, high-performance integration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services-info-container">
+                        <div class="services-info">
+                            <i class="fa-solid fa-code-compare"></i>
+                            <h3>Power Platform Apps</h3>
+                            <p>Build business apps using Power Apps, SharePoint, and Power Automate.</p>
+                        </div>
+                        <div class="services-info">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            <h3>CI/CD & Automation</h3>
+                            <p>Automate deployments and streamline development with CI/CD pipelines.</p>
+                        </div>
+                        <div class="services-info">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Code Optimization</h3>
+                            <p>Refactor code to improve performance and maintainability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="skills" class="text-content" style="display:none;">
+                    <div class="work-info-main">
+                        <div class="work-info">
+                            <h2>Technical Skills</h2>
+                            <ul>
+                                <li>C# (.NET Core, REST API, Security, Unit Testing)</li>
+                                <li>Python</li>
+                                <li>Java (Basic)</li>
+                                <li>SQL (MS SQL Server)</li>
+                                <li>HTML5, CSS3, JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+                        <div class="work-info">
+                            <h2>Frameworks & Tools</h2>
+                            <ul>
+                                <li>React / Angular</li>
+                                <li>.NET Core</li>
+                                <li>Git</li>
+                                <li>CI/CD Pipelines</li>
+                                <li>SharePoint</li>
+                                <li>Power Apps</li>
+                                <li>Power Automate</li>
+                            </ul>
+                        </div>
+                        <div class="work-info">
+                            <h2>Development Strengths</h2>
+                            <ul>
+                                <li>UX/UI Design</li>
+                                <li>Problem-Solving</li>
+                                <li>Clean Code Practices</li>
+                                <li>Cross-functional Collaboration</li>
+                                <li>Test-Driven Development</li>
+                                <li>Graphic Design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects" class="text-content" style="display:none;">
+                    <div class="projects-info-container">
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Home Style Haven</h4>
+                                <p>.NET-focused repo covering key development topics like architecture, security, WebAPI, SQL, and Angular. It's designed for both beginners and experienced developers.</p>
+                                    <a target="_blank" href="https://github.com/DzhansuMyumyun/HomeStyleHaven">Explore on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Rent A Car</h4>
+                                <p>Rent a Car is a full-stack app using .NET Core and Angular with secure CRUD APIs and SQL integration. It demonstrates layered architecture, validation, and user authentication.</p>
+                                <a target="_blank" href="https://github.com/DzhansuHalim/Car_Rental">Explore on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Wonder Style</h4>
+                                <p>Wonder Style is a women’s fashion site using C# backend, TypeScript frontend, TSQL database, and Docker deployment. It features dynamic UI with JavaScript, HTML, and styled with CSS.</p>
+                                    <a target="_blank" href="https://github.com/DzhansuMyumyun/WonderStyle">Explore on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-info-container">
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Hotel Harmonie Website</h4>
+                                <p>Hotel Harmonie is a responsive site with HTML, CSS, and JavaScript featuring room info and online booking.</p>
+                                    <a  target="_blank" href="https://github.com/DzhansuMyumyun/HotelHarmonie">Explore on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Library Management</h4>
+                                <p>A simple Library Management app built with C#, SQL, and CI/CD, featuring unit testing for reliable performance.</p>
+                                    <a target="_blank" href="https://github.com/DzhansuMyumyun/LibraryManagement">Explore on GitHub</a>
+                            </div>
+                        </div>
+                        <div class="projects-info">
+                            <div class="projects-description">
+                                <h4>Graphic Design</h4>
+                                <p>Created graphics for the SPLENDID Research project to enhance the visual appeal of the MOBROG website.</p>
+                                    <a target="_blank" href="https://github.com/DzhansuMyumyun/GraphicDesign">Explore on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end services section -->
+
+        
+
+        <!-- start work section -->
+        <!-- <div class="work-main-container">
+            <div class="work-sub-container">
+                <div class="work-info-container">
+                 
+                    <div class="work-info-main">
+                        <div class="work-info">
+                            <h2>Technical Skills</h2>
+                            <ul>
+                                <li>C# (.NET Core, REST API, Security, Unit Testing)</li>
+                                <li>Python</li>
+                                <li>Java (Basic)</li>
+                                <li>SQL (MS SQL Server)</li>
+                                <li>HTML5, CSS3, JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+                        <div class="work-info">
+                            <h2>Frameworks & Tools</h2>
+                            <ul>
+                                <li>React / Angular</li>
+                                <li>.NET Core</li>
+                                <li>Git</li>
+                                <li>CI/CD Pipelines</li>
+                                <li>SharePoint</li>
+                                <li>Power Apps</li>
+                                <li>Power Automate</li>
+                            </ul>
+                        </div>
+                        <div class="work-info">
+                            <h2>Development Strengths</h2>
+                            <ul>
+                                <li>UX/UI Design</li>
+                                <li>Problem-Solving</li>
+                                <li>Clean Code Practices</li>
+                                <li>Cross-functional Collaboration</li>
+                                <li>Test-Driven Development</li>
+                                <li>Graphic Design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="work-image-container">
+                </div>
+            </div>
+        </div> -->
+        <!-- end work section -->
+
+
+        <!-- start projects section -->
+        <!-- <div class="projects-main-container">
+            <div class="projects-sub-container">
+                <div class="projects-info-title">
+                    <h2>PROJECTS</h2>
+                </div>
+                <div class="projects-info-container">
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Home Style Haven</h4>
+                            <p>.NET-focused repo covering key development topics like architecture, security, WebAPI, SQL, and Angular. It's designed for both beginners and experienced developers.</p>
+                                <a target="_blank" href="https://github.com/DzhansuMyumyun/HomeStyleHaven">Explore on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Rent A Car</h4>
+                            <p>Rent a Car is a full-stack app using .NET Core and Angular with secure CRUD APIs and SQL integration. It demonstrates layered architecture, validation, and user authentication.</p>
+                            <a target="_blank" href="https://github.com/DzhansuHalim/Car_Rental">Explore on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Wonder Style</h4>
+                            <p>Wonder Style is a women’s fashion site using C# backend, TypeScript frontend, TSQL database, and Docker deployment. It features dynamic UI with JavaScript, HTML, and styled with CSS.</p>
+                                <a target="_blank" href="https://github.com/DzhansuMyumyun/WonderStyle">Explore on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-info-container">
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Hotel Harmonie Website</h4>
+                            <p>Hotel Harmonie is a responsive site with HTML, CSS, and JavaScript featuring room info and online booking.</p>
+                                <a  target="_blank" href="https://github.com/DzhansuMyumyun/HotelHarmonie">Explore on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Library Management</h4>
+                            <p>A simple Library Management app built with C#, SQL, and CI/CD, featuring unit testing for reliable performance.</p>
+                                <a target="_blank" href="https://github.com/DzhansuMyumyun/LibraryManagement">Explore on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="projects-info">
+                        <div class="projects-description">
+                            <h4>Graphic Design</h4>
+                            <p>Created graphics for the SPLENDID Research project to enhance the visual appeal of the MOBROG website.</p>
+                                <a target="_blank" href="https://github.com/DzhansuMyumyun/GraphicDesign">Explore on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
+        <!-- end projects section -->
+
+
+
+        <div class="workexp-main-container">
+            <div class="workexp-sub-container">
+                <div class="workexp-info-title">
+                    <h2>Work Experience</h2>
+                </div>
+                <div class="workexp-info-div">
+                    
+                    <div class="workexp-date">
+                        <span>2021-2025</span>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="workexp-icon">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+                    <div class="workexp-description">
+                        <h4>SPLENDID RESEARCH</h4>
+                        <h5>Hamburg, Germany</h5>
+                        <p>I collaborated to enhance the existing MOBROG website, focusing on improving the onsite user experience (UX/UI) to make it more intuitive, visually appealing, and engaging for visitors. Through careful analysis and iterative design, we implemented changes aimed at streamlining navigation, optimizing content layout, and refining interactive elements, resulting in a more satisfying and seamless browsing experience for users. </p>
+                    </div>
+
+
+                </div>
+                <div class="workexp-info-div">
+                    
+
+                    <div class="workexp-description" style="text-align: end;">
+                        <h4>SPLENDID RESEARCH</h4>
+                        <h5>Hamburg, Germany</h5>
+                        <p>I collaborated to enhance the existing MOBROG website, focusing on improving the onsite user experience (UX/UI) to make it more intuitive, visually appealing, and engaging for visitors. Through careful analysis and iterative design, we implemented changes aimed at streamlining navigation, optimizing content layout, and refining interactive elements, resulting in a more satisfying and seamless browsing experience for users. </p>
+                    </div>
+                    <div class="workexp-icon">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+                    <div class="workexp-date" style="text-align: start;">
+                        <span>2021-2025</span>
+                        <p>Web Developer</p>
+                    </div>
+
+
+                </div>
+                <div class="workexp-info-div">
+                    
+                    <div class="workexp-date">
+                        <span>2021-2025</span>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="workexp-icon">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span></span>
+                    </div>
+                    <div class="workexp-description">
+                        <h4>SPLENDID RESEARCH</h4>
+                        <h5>Hamburg, Germany</h5>
+                        <p>I collaborated to enhance the existing MOBROG website, focusing on improving the onsite user experience (UX/UI) to make it more intuitive, visually appealing, and engaging for visitors. Through careful analysis and iterative design, we implemented changes aimed at streamlining navigation, optimizing content layout, and refining interactive elements, resulting in a more satisfying and seamless browsing experience for users. </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    <!-- end main -->
+
+    <!-- start footer -->
+        <!-- start contact section -->
+        <div class="conatct-main-container">
+            <div class="contact-sub-container">
+                <div class="conatct-info-container">
+                    <div class="conatct-info-span">
+                        <span>contact me</span>
+                    </div>
+                    <div class="contact-info">
+                        <h2>DZHANSU MYUMYUN</h2>
+                        <p>Freelance Web Developer</p>
+                        <p>Helping businesses grow with fast, functional, and beautifully designed websites.</p>
+                    </div>
+                    <div class="contact-social-main">
+                        <div class="contact-social">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- end contact section -->
+    <!-- end footer -->
+
+
+
+
+
 </body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
+<script>
+    function showText(id, btn) {
+        // Hide all text
+        const texts = document.querySelectorAll('.text-content');
+        texts.forEach(t => (t.style.display = 'none'));
+    
+        // Show selected text
+        document.getElementById(id).style.display = 'block';
+    
+        // Remove 'active' class from all buttons
+        const buttons = btn.parentNode.querySelectorAll('button');
+        buttons.forEach(b => b.classList.remove('active'));
+    
+        // Add 'active' class to clicked button
+        btn.classList.add('active');
+      }
+</script>
+
 </html>
