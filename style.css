@@ -556,6 +556,8 @@ span.single-timeline-horizontal{
 }
 
 .projects-info {
+    display:flex;
+    align-items:center;
     margin-top: 1em;
     padding: 20px;
     border-radius: 10px;
