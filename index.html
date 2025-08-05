@@ -342,29 +342,34 @@
                     <div class="projects-info-container">
                         <div class="projects-info">
                             <div class="projects-description">
-                                <img src="./images/Design1_1.png" style="width: 250px;" alt="">
+                                <img src="./images/Design1_1.png" class="clickable-img" style="width: 250px;" alt="">
                             </div>
                         </div>
                         <div class="projects-info">
                             <div class="projects-description">
-                                <img src="./images/Design2_2.png" style="width: 250px;" alt="">
+                                <img src="./images/Design2_2.png" class="clickable-img" style="width: 250px;" alt="">
                             </div>
                         </div>
                         <div class="projects-info">
                             <div class="projects-description">
-                                <img src="./images/Design3_3.png" style="width: 250px;" alt="">
+                                <img src="./images/Design3_3.png" class="clickable-img" style="width: 250px;" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="projects-info-container">
                         <div class="projects-info">
                             <div class="projects-description">
-                                <img src="./images/Design4_1.png" style="width: 250px;" alt="">
+                                <img src="./images/Design4_1.png" class="clickable-img" style="width: 250px;" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Lightbox Container -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-btn">&times;</span>
+            <img class="lightbox-img" id="lightbox-img" />
         </div>
         <!-- end services section -->
 
@@ -496,7 +501,19 @@
                     <div class="workexp-description">
                         <h4>SPLENDID RESEARCH</h4>
                         <h5>Hamburg, Germany</h5>
-                        <p class="text">I collaborated to enhance the existing MOBROG website, focusing on improving the onsite user experience (UX/UI) to make it more intuitive, visually appealing, and engaging for visitors. Through careful analysis and iterative design, we implemented changes aimed at streamlining navigation, optimizing content layout, and refining interactive elements, resulting in a more satisfying and seamless browsing experience for users. </p>
+                        <p class="text">
+                            <ul>
+                                <li>Front-end development and implementation of responsive web designs using HTML, CSS and JavaScript</li>
+                                <li>Working with the CMS Joomla, as well as managing and programming portal pages and templates in the software keyIngress</li>
+                                <li>Relaunch of our panel portal and creation of a style guide</li>
+                                <li>Designing graphics for use on the website and social media channels</li>
+                                <li>Technical implementation of advertisements and an A/B testing setup</li>
+                                <li>Testing and ensuring high user-friendliness (UI/UX)</li>
+                                <li>Bug fixing and code optimization (e.g. page speed)</li>
+                                <li>Documentation of technical processes</li>
+                                <li>Close collaboration with product managers and the marketing department to implement business requirements</li>
+                            </ul>
+                        </p>
                     </div>
 
 
@@ -504,10 +521,18 @@
                 <div class="workexp-info-div">
                     
 
-                    <div class="workexp-description" style="text-align: end;">
+                    <div class="workexp-description" style="text-align: right;">
                         <h4>ADDVALS</h4>
                         <h5>Brussels, Belgium</h5>
-                        <p class="text">I worked on a software application with Elsa workflow, conducted security searches, and presented findings. I created an MVP and presented it. Moreover, I designed and developed a user-friendly website, which included an optimized check-out page resulting in increased user clicks.</p>
+                        <p class="text">
+                            <ul style="text-align: left; display: inline-block;">
+                                <li>Worked on a software application integrating Elsa Workflow for streamlined process automation.</li>
+                                <li>Conducted security assessments and presented findings to relevant stakeholders.</li>
+                                <li>Developed and presented a Minimum Viable Product (MVP) to demonstrate core functionality and value.</li>
+                                <li>Designed and developed a user-friendly website with a focus on intuitive navigation and accessibility.</li>
+                                <li>Optimized the check-out page, resulting in a measurable increase in user clicks and conversions.</li>
+                            </ul>
+                        </p>
                     </div>
                     <div class="workexp-icon">
                         <i class="fa fa-circle" aria-hidden="true"></i>
@@ -533,7 +558,15 @@
                     <div class="workexp-description">
                         <h4>Scholengroep </h4>
                         <h5>Brussels, Belgium</h5>
-                        <p class="text">I developed applications using Power Apps and utilized SharePoint to retrieve user data. Additionally, I implemented notifications by integrating applications with Power Automate. The result was a structured, feature-rich software application. Furthermore, I optimized the software app to enhance page loading performance for faster user experience. </p>
+                        <p class="text">
+                            <ul>
+                                <li>Developed custom applications using Power Apps, tailored to specific business needs.</li>
+                                <li>Utilized SharePoint to retrieve and manage user data efficiently.</li>
+                                <li>Implemented automated notifications by integrating applications with Power Automate, enhancing user communication.</li>
+                                <li>Delivered a structured and feature-rich software application with a strong focus on functionality and user experience.</li>
+                                <li>Optimized application performance, significantly improving page load speed for a faster and smoother user experience.</li>
+                            </ul>
+                        </p>
                     </div>
 
 
@@ -668,6 +701,36 @@
     
         // Add 'active' class to clicked button
         btn.classList.add('active');
+
+
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.close-btn');
+        const thumbnails = document.querySelectorAll('.clickable-img');
+
+        thumbnails.forEach(img => {
+            img.addEventListener('click', () => {
+            lightbox.style.display = 'block';
+            lightboxImg.src = img.src;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+        });
+
+        // Optional: click outside image to close
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+            lightboxImg.src = '';
+            }
+        });
+
+
+
       }
 </script>
 
