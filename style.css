@@ -882,6 +882,107 @@ span.single-timeline-horizontal{
     }
 }
 
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navigation-sub-container ul {
+        gap: 20px;
+    }
+
+    .workexp-icon span{
+        height: 100%;
+    }
+
+    .header-sub-container {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .header-info-container h1 {
+        font-size: 36px;
+    }
+
+    .header-image-container img {
+        width: 320px;
+        margin-left: 1em;
+    }
+
+    .about-sub-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-image-container img {
+        width: 250px;
+        margin-bottom: 0;
+    }
+
+    .about-info-container {
+        margin-left: 20px;
+        padding: 2em;
+    }
+
+    .services-info-container {
+        justify-content: space-around;
+    }
+
+    .services-info {
+        width: 40%;
+    }
+
+    .work-sub-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .work-image-container img {
+        width: 250px;
+        margin: 0 1em;
+    }
+
+    .education-info-main-div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .education-info-div {
+        width: 40%;
+        margin: 1em;
+    }
+
+    .projects-info-container {
+        justify-content: space-around;
+    }
+
+    .projects-info {
+        width: 45%;
+    }
+
+    .workexp-info-div {
+        flex-direction: row;
+    }
+
+    .workexp-date,
+    .workexp-description {
+        width: 45%;
+    }
+
+    .contact-sub-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-image-container img {
+        width: 180px;
+    }
+}
+
+
+
+
+
+
+
 /* Even smaller screens like phones */
 @media (max-width: 480px) {
     .header-info-container h1 {
