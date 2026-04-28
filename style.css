@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: #333;    
     line-height: 1.6;
     background-color: #fffdf7;
     overflow-x: hidden;
@@ -225,6 +225,11 @@ h1, h2{
 .about-info p {
     color: #666;
     margin: 10px 0;
+}
+
+.about-info ul{
+    list-style: none;
+    color: #666;
 }
 
 /* Services Section */
