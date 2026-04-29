@@ -96,7 +96,7 @@ const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
               </a>
 
               <a
-                href={project.github}
+                href={project.github} target="_blank"
                 className="px-4 py-2 border content-center rounded-xl hover:bg-zinc-50"
               >
                 GitHub

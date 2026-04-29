@@ -12,7 +12,8 @@ export default function Hero() {
       >
         
         <span className="block text-3xl md:text-5xl  bg-linear-to-r from-emerald-400 via-teal-500 to-blue-600 bg-clip-text text-transparent leading-[1.1] ">
-          Full-Stack Developer React + .NET   <br className="hidden md:block" /> 
+          Full-Stack Web Developer  <br className="hidden md:block" /> 
+          Building with React, TypeScript & .NET  <br className="hidden md:block" /> 
           5+ Years Experience
         </span>
       </motion.h1>

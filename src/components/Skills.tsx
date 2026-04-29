@@ -11,7 +11,7 @@ const skillGroups = [
   {
     title: "Frontend",
     icon: <Globe size={20} />,
-    items: ["React", "TypeScript", "Tailwind", "Redux", "JavaScript","HTML5", "CSS3", "Storybook"],
+    items: ["React", "TypeScript","Angular", "Tailwind", "Redux", "JavaScript","HTML5", "CSS3", "Storybook"],
   },
   {
     title: "Backend",
