@@ -31,9 +31,7 @@ export default function About() {
             </p>
 
             <p className="text-zinc-700 text-base md:text-lg leading-relaxed mt-5">
-              I enjoy turning complex business requirements into fast,
-              maintainable products with clean architecture, strong UX, and
-              scalable backend systems.
+              I enjoy building clean, scalable applications and continuously improving my skills in modern web technologies.
             </p>
 
             <p className="text-zinc-700 text-base md:text-lg leading-relaxed mt-5">

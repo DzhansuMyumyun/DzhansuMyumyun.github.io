@@ -3,6 +3,8 @@ import {
 } from "lucide-react";
 import TaskVideo from '../assets/TaskManager.mp4'
 import CarVideo from '../assets/CarRental.mp4'
+import CarImage from '../assets/CarRental.png'
+import TaskImage from '../assets/TaskManager.png'
 
 import { useState } from 'react';
 import VideoModal from './VideoModal';
@@ -16,8 +18,9 @@ const projects = [
     impact: [
       "Optimized UI with React & TypeScript",
       "Built scalable REST API with .NET ",
-      "Scalable modular architecture",
+      "Implemented authentication with JWT & role-based access",
     ],
+    img:TaskImage,
     live: TaskVideo,
     github: "https://github.com/DzhansuMyumyun/TaskManager",
   },
@@ -27,10 +30,11 @@ const projects = [
       "Full-stack booking system with authentication, admin dashboard, reservations, and validation.",
     tech: ["Angular", ".NET", "SQL"],
     impact: [
-      "Robust N-Tier Architecture & SOLID Design",
-      "Secure End-to-End Authentication Flow",
-      "Optimized Data Management & UX",
+      "Designed REST API with .NET (JWT auth, role-based access)",
+      "Handled CRUD operations for users, bookings, and payments",
+      "Improved performance by optimizing SQL queries and indexing",
     ],
+    img:CarImage,
     live:CarVideo,
     github: "https://github.com/DzhansuMyumyun/Car_Rental",
   },
@@ -56,6 +60,7 @@ const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
             key={project.title}
             className="border border-zinc-200 rounded-3xl p-7 hover:shadow-xl transition-all bg-white"
           >
+            <img src={project.img} alt="" className=" border border-zinc-200  mb-3" />
             <h3 className="text-2xl text-zinc-700 font-semibold mb-3">{project.title}</h3>
 
             <p className="text-zinc-700 mb-5 ">{project.description}</p>
