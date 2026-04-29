@@ -19,8 +19,7 @@ export default function Hero() {
       </motion.h1>
       <div className="flex justify-center">
       <p className="text-base md:text-lg mt-6 text-zinc-700 max-w-xl mx-auto">
-          I help companies turn complex requirements into fast, scalable web applications.
-      </p>
+          I build fast, scalable web applications with a focus on clean architecture, performance, and user experience.      </p>
       </div>
 
       <div className="flex justify-center mt-8">

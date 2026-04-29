@@ -14,8 +14,8 @@ const projects = [
       "Kanban task management platform with drag & drop, real-time collaboration, filtering, and subtasks.",
     tech: ["React", "TypeScript", ".NET", "SQL", "Storybook"],
     impact: [
-      "Improved task update speed by 40%",
-      "Supports real-time multi-user updates",
+      "Optimized UI with React & TypeScript",
+      "Built scalable REST API with .NET ",
       "Scalable modular architecture",
     ],
     live: TaskVideo,
