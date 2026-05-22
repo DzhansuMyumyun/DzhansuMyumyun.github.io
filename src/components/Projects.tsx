@@ -1,7 +1,7 @@
 import {
   ChevronRight,
 } from "lucide-react";
-import TaskVideo from '../assets/TaskManager.mp4'
+import TaskVideo from '../assets/TaskManager2.mp4'
 import CarVideo from '../assets/CarRental.mp4'
 import CarImage from '../assets/CarRental.png'
 import TaskImage from '../assets/TaskManager.png'
